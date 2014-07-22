@@ -849,7 +849,7 @@ void do_final_gstorage( void ) {
 	}
 
 	db_destroy(gstorage->db);
-	db_destroy(iter);
+	dbi_destroy(iter);
 }
 
 void storage_defaults(void) {
